@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+.about {
+    background-image: url(images/GreatElmCapital.png);
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    margin: 2rem;
+}
+nav {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+a {
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    border: solid black 3px;
+}
+a:hover {
+    background-color:lightgrey;
+}
+h2{
+    text-align: center;
+}
+p {
+    text-align: center;
+}
