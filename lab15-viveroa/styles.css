@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(9, 2, 29);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.rover {
+    width: 30rem;
+    height: 30rem;
+    position: fixed;
+    display: block;
+
+    bottom: 10.5rem;
+    left: 10%;
+
+    animation: moveRover 4s ease-in-out infinite alternate;
+
+    /* animation: holdup 3s ease-in infinite alternate-reverse ; */
+    
+}
+.rover:after{
+    content: url('images/dish.svg');
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+
+    z-index: 1;
+    transform-origin: center bottom;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation: rotateName 2s linear infinite alternate;
+}
+.mars {
+    position: fixed;
+    width: 100%;
+    height: 10.5rem;
+    z-index: -1;
+    background-color: #913a25;
+    border-top: 1rem solid #d15f44;
+    bottom: 0;
+}
+.planet {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    z-index: -2;
+
+    left: 30%;
+    animation: rise 10s ease-in 1;
+    animation-fill-mode: forwards;
+}
+.king>img {
+    border-radius: 50%;
+    height: 5rem;    
+    
+}
+.king{
+    position: fixed;
+    z-index: -2;
+    transform-origin: center;
+    animation: king 7s ease-in-out infinite alternate;
+}
+@keyframes rise{
+    from {
+        bottom: 0;
+        transform: rotate(0) scale(1);
+    }
+    to {
+        bottom: 75%;
+        transform: rotate(180deg) scale(2);
+    }
+}
+@keyframes rotateName{
+    from{
+        transform: rotate(-5deg);
+    }
+    to{
+        transform: rotate(-33deg);
+    }
+}
+@keyframes moveRover {
+    from{
+        left: 10%;
+    }
+    to {
+        left: 80%;
+    }
+}
+@keyframes holdup{
+    from {
+        left: 80%;
+    }
+    to{
+        left: 10%;
+    }
+}
+@keyframes king {
+    from{
+        bottom: 0;
+        left: 0;
+        transform: scale(1);
+    }
+    50%{
+        left: 50%;
+        bottom: 75%;
+        transform: scale(2);
+    }
+    to {
+        bottom: 0;
+        transform: scale(1);
+        left: 100%;
+    }
+}
