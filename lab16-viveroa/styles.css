@@ -24,13 +24,12 @@ header nav {
     position: fixed;
     width: 100%;
    /* top: 0; */
-   top: 4.75rem;
+    top: 4.75rem;
     
     left: 100%;
     transition-property: left;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
-
 }
 header nav a {
     display: block;
@@ -67,7 +66,7 @@ header nav.show {
 .overlay.show {
     left: 0;
 }
-.parrallax {
+.parallax {
     position: fixed;
     width: 150%;
     top: 0;
