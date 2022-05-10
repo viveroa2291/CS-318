@@ -2,22 +2,37 @@ body {
     background-color: #fdf6e4;
 }
 header {
+    margin: 1rem 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+section {
+    margin: 1rem 5rem;
+}
 nav>a {
     margin-left: 4rem;
+    color: #f9545b;
+    text-decoration: none;
+    font-family: 'Eater', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+nav>a:hover {
+    color: #fa7578;
+    text-decoration: underline;
 }
 .about-image, .hours-image{
     height: 250px;
 }
-.basket-image, .little-icons {
+.basket-image{
     height: 20px;
 }
+.little-icons {
+    height: 25px;
+}
 .the-goods {
-    height: 50px;
+    height: 75px;
 }
 .butter-half-image {
     height: 100px;
@@ -29,4 +44,100 @@ nav>a {
     align-items: center;
     background-color: #f9545b;
     color: white;
+}
+.butter-half {
+    height: 400px;
+    color: white;
+    text-align: center;
+    background-image: url('images/croissant.jpeg'); 
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+}
+.about-div {
+    margin-left: 2rem;  
+}
+.about-div h2 {
+    color: #f9545b;
+}
+.about-header, .hours-header {
+    font-family: 'Eater', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+.hours {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center; 
+}
+.hours-div {
+    margin-left: 2rem;
+}
+.hours-div h2 {
+    color: #f9545b;
+}
+.hours-schedule {
+    display: flex;
+    flex-direction: row;
+}
+.days {
+    margin-left: 3rem;
+}
+.card-image {
+    height: 250px;
+}
+.first-card, .second-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.card {
+    background-color: white;
+    font-family: 'Eater', cursive;
+    font-family: 'Montserrat', sans-serif;
+    color: #f9545b;
+    margin: .125rem .5rem;
+    padding: 1rem;
+}
+footer {
+    background-color: #5bc0b4;
+    color: #0b132b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social img {
+    height: 2rem;
+    margin: .25rem;
+}
+.bottom-nav {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.submit {
+    background-color: #f9545b;
+    color: white;
+    width: max-content;
+    padding: 1rem 7rem;
+    font-family: 'Eater', cursive;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.quantity {
+    border-radius: 5px;
+    border: solid 3px #2aac92;
+    background-color: #fdf6e4;
+    padding: .5rem .5rem;
+    margin-top: 1rem;
+}
+label {
+    color: black;
 }
