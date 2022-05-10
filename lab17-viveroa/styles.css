@@ -1,0 +1,32 @@
+body {
+    background-color: #fdf6e4;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>a {
+    margin-left: 4rem;
+}
+.about-image, .hours-image{
+    height: 250px;
+}
+.basket-image, .little-icons {
+    height: 20px;
+}
+.the-goods {
+    height: 50px;
+}
+.butter-half-image {
+    height: 100px;
+}
+.break-point {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f9545b;
+    color: white;
+}
