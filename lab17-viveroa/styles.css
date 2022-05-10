@@ -12,7 +12,7 @@ section {
     margin: 1rem 5rem;
 }
 nav>a {
-    margin-left: 4rem;
+    margin-left: 5rem;
     color: #f9545b;
     text-decoration: none;
     font-family: 'Eater', cursive;
@@ -26,13 +26,20 @@ nav>a:hover {
     height: 250px;
 }
 .basket-image{
-    height: 20px;
+    height: 35px;
+    align-self: baseline;
 }
 .little-icons {
     height: 25px;
 }
-.the-goods {
-    height: 75px;
+.pudding-icon, .the-goods {
+    height: 50px;
+    align-self: baseline;
+}
+.the-goods-text {
+    align-self: baseline;
+    font-family: 'Eater', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 .butter-half-image {
     height: 100px;
@@ -41,15 +48,27 @@ nav>a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
     background-color: #f9545b;
     color: white;
+    padding-top: 1rem;
+    padding-bottom: .125rem;
 }
 .butter-half {
     height: 400px;
     color: white;
-    text-align: center;
-    background-image: url('images/croissant.jpeg'); 
+    background-image: url('images/croissant.jpeg');
+}
+.header-one {
+    font-size: 50px;
+    font-family: 'Eater', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+.butter-half-paragraph {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.butter-half-div {
+    padding: 5rem ;
 }
 .about {
     display: flex;
@@ -92,14 +111,16 @@ nav>a:hover {
 .first-card, .second-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
+    margin: 1rem 5rem;
 }
 .card {
     background-color: white;
     font-family: 'Eater', cursive;
     font-family: 'Montserrat', sans-serif;
     color: #f9545b;
+    width: 300px;
     margin: .125rem .5rem;
     padding: 1rem;
 }
@@ -108,7 +129,8 @@ footer {
     color: #0b132b;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 5rem;
     align-items: center;
 }
 .social img {
@@ -118,7 +140,14 @@ footer {
 .bottom-nav {
     display: flex;
     flex-direction: column;
-    color: white;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.bottom-nav>a {
+    color: #fdf6e4;
+    margin-top: .125rem;
+    margin-bottom: .125rem;
+    font-family: 'Poppins', sans-serif;
 }
 .submit {
     background-color: #f9545b;
@@ -140,4 +169,12 @@ footer {
 }
 label {
     color: black;
+}
+h3 {
+    height: 50px;
+}
+
+@media (min-width: 1000px) {
+
+    
 }

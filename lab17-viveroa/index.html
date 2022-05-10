@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eater&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>            
@@ -16,14 +19,16 @@
         <nav> 
             <a href="#about">about</a>
             <a href="#hours">hours</a>
-            <a href="#order">order</a>
-            <img class="basket-image"src="images/wicker-basket.svg" alt="Basket">
+            <a href="#order">order <img class="basket-image"src="images/wicker-basket.svg" alt="Basket"></a>
         </nav>
     </header>
     <main>
-        <section class="butter-half">
-            <h1>The Butter Half Bakery</h1>
-            <p>"I'm gonna eat you 'cause baby <br> You're my butter half"</p>
+        <section class="butter-half"> 
+            <div class="butter-half-div">
+                <h1 class="header-one">The Butter Half Bakery</h1>
+                <p class="butter-half-paragraph">"I'm gonna eat you 'cause baby <br> You're my butter half"</p>
+            </div>
+            
         </section>
         <section class="about" id="about"> 
             <img class="about-image" src="images/about.png" alt="About">
@@ -63,13 +68,13 @@
             </div>
         </section>
         <section class="break-point" id="order">
-             <img class="the-goods" src="images/cookie.svg" alt="Cookie">
-            <h2>The Goods</h2>
+            <img class="the-goods" src="images/cookie.svg" alt="Cookie">
+            <h2 class="the-goods-text">The Goods</h2>
             <img class="the-goods" src="images/croissant.svg" alt="Croissant">
             <img class="little-icons" src="images/bread.svg" alt="Bread">
             <img class="little-icons" src="images/pie.svg" alt="Pie">
             <img class="little-icons" src="images/donut.svg" alt="donut">
-            <img class="little-icons" src="images/pudding.svg" alt="pudding">
+            <img class="pudding-icon" src="images/pudding.svg" alt="pudding">
         </section>
            
         <section class="first-card">
@@ -124,7 +129,6 @@
                 <h3>Fresh Fruit & Lemon Custard Tart</h3>
                 <img class="card-image" src="images/fruit-custard-tart.png" alt="fresh fruit-custard-tart">
                 <form action="">
-                   <br>
                    <label for="Quantity">Qty.</label>
                    <input class="quantity" type="Quantity"> <br>
                    <input class="submit" type="submit">
