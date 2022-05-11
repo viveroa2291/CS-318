@@ -173,8 +173,40 @@ label {
 h3 {
     height: 50px;
 }
+.hamburger {
+    display: none;
+}
+header nav {
+    position: static;
+    background-color: unset;
+    width: unset;
+}
+@media (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        width: 40px;
+        padding: .5rem;
+    }
+    .hamburger hr {
+        margin: .75rem 0;
+        border: 2px solid #f9545b;
+    }
+   
+    .butter-half-image {
+        height: 50px;
+    }
+    .butter-half {
+        height: 200px;
+    }
+    .butter-half-div{
+        padding: 1rem;
+        text-align: center;
+    }
+    .header-one {
+        font-size: 25px;
+    }
+    .butter-half-paragraph {
+        font-size: 15px;
+    }
 
-@media (min-width: 1000px) {
-
-    
 }
