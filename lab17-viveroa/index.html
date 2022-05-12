@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <script src="scripts.js"></script> 
 </head>
 <body>
     <div class="overlay toggle-nav">
 
-    </div>
-    <header>            
+    </div>        
+    <header>                
         <img class="butter-half-image" src="images/butter-half-logo.svg" alt="Butter Half Logo">
         <div class="hamburger" onclick="toggleNav()">
             <hr>
@@ -27,7 +28,7 @@
         <nav class="toggle-nav"> 
             <a href="#about">about</a>
             <a href="#hours">hours</a>
-            <a href="#order">order <img class="basket-image"src="images/wicker-basket.svg" alt="Basket"></a>
+            <a href="#order">order <img class="basket-image" src="images/wicker-basket.svg" alt="Basket"></a>
         </nav>
     </header>
     <main>
@@ -76,13 +77,13 @@
             </div>
         </section>
         <section class="break-point" id="order">
-            <img class="the-goods" src="images/cookie.svg" alt="Cookie">
+            <img class="the-goods the-goods-mobile" src="images/cookie.svg" alt="Cookie">
             <h2 class="the-goods-text">The Goods</h2>
             <img class="the-goods" src="images/croissant.svg" alt="Croissant">
-            <img class="little-icons" src="images/bread.svg" alt="Bread">
-            <img class="little-icons" src="images/pie.svg" alt="Pie">
-            <img class="little-icons" src="images/donut.svg" alt="donut">
-            <img class="pudding-icon" src="images/pudding.svg" alt="pudding">
+            <img class="little-icons little-icons-mobile" src="images/bread.svg" alt="Bread">
+            <img class="little-icons other-icons-mobile" src="images/pie.svg" alt="Pie">
+            <img class="little-icons the-goods-mobile" src="images/donut.svg" alt="donut">
+            <img class="pudding-icon other-icons-mobile" src="images/pudding.svg" alt="pudding">
         </section>
            
         <section class="first-card">
@@ -98,7 +99,7 @@
             <div class="card">
                 <h3>Macarons</h3>
                 <img class="card-image" src="images/macarons.png" alt="macarons">
-                <form action="">
+                <form>
                     <label for="Quantity">Qty. </label>
                     <input class="quantity" type="Quantity"> <br>
                     <input class="submit" type="submit">
@@ -107,18 +108,16 @@
             <div class="card">
                 <h3>Strawberry Meringue</h3>
                 <img class="card-image" src="images/strawberry-meringue.png" alt="strawberry-meringue">
-                <form action="">
+                <form>
                     <label for="Quantity">Qty.</label>
                     <input class="quantity" type="Quantity"> <br>
                     <input class="submit" type="submit">
                 </form>
             </div>
-        </section>
-        <section class="second-card">
             <div class="card">
                 <h3>Peach & Raspberry Tart</h3>
                 <img class="card-image" src="images/peach-and-raspberry-tart.png" alt="peach-and-raspberry-tart">
-                <form action="">
+                <form>
                    <label for="Quantity">Qty.</label>
                    <input class="quantity" type="Quantity"> <br>
                    <input class="submit" type="submit">
@@ -127,7 +126,7 @@
             <div class="card">
                 <h3>Chocolate & Raspberry Tart</h3>
                 <img class="card-image" src="images/chocolate-raspberry-tart.png" alt="chocolate & Raspberry tart">
-                <form action="">
+                <form>
                    <label for="Quantity">Qty.</label>
                    <input class="quantity" type="Quantity"> <br>
                    <input class="submit" type="submit">
@@ -136,7 +135,7 @@
             <div class="card">
                 <h3>Fresh Fruit & Lemon Custard Tart</h3>
                 <img class="card-image" src="images/fruit-custard-tart.png" alt="fresh fruit-custard-tart">
-                <form action="">
+                <form>
                    <label for="Quantity">Qty.</label>
                    <input class="quantity" type="Quantity"> <br>
                    <input class="submit" type="submit">
@@ -158,11 +157,3 @@
     </footer>
 </body>
 </html>
-<script>
-    function toggleNav() {
-    let elements = document.getElementsByClassName('toggle-nav');
-    for(let i = 0; i < elements.length; i++){
-    elements[i].classList.toggle('show');
-    }
-}
-</script>

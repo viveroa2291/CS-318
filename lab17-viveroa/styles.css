@@ -108,9 +108,9 @@ nav>a:hover {
 .card-image {
     height: 250px;
 }
-.first-card, .second-card {
-    display: flex;
-    flex-direction: row;
+.first-card{
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
     justify-content: space-around;
     text-align: center;
     margin: 1rem 5rem;
@@ -176,12 +176,21 @@ h3 {
 .hamburger {
     display: none;
 }
+.toggle-nav {
+    margin-top: 1rem;
+}
 header nav {
     position: static;
     background-color: unset;
     width: unset;
 }
 @media (max-width: 1000px) {
+    header {
+        margin: 1rem 2rem;
+    }
+    section {
+        margin: 1rem 2rem;
+    }
     .hamburger {
         display: block;
         width: 40px;
@@ -191,7 +200,43 @@ header nav {
         margin: .75rem 0;
         border: 2px solid #f9545b;
     }
-   
+    header nav a {
+        display: block;
+        margin-left: 0;
+        color: #fa7578;
+        text-align: center;
+        text-decoration: none;
+        padding: 3rem;
+        border: 1px solid #fa7578;
+    }
+    .toggle-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+        left: -100%;
+        background-color: white;
+        position: fixed;
+        z-index: 1; 
+        top: 5.5rem;
+        width: 100%;
+    }
+    .hamburger, nav.show {
+        left: 0;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        top: 5.5rem;
+        background-color: #fa75777a;
+        transition-property: left;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+        left: 100%;
+    }
+    .overlay.show {
+        left: 0;
+    }
     .butter-half-image {
         height: 50px;
     }
@@ -208,5 +253,45 @@ header nav {
     .butter-half-paragraph {
         font-size: 15px;
     }
-
+    .about, .hours{
+        flex-direction: column;        
+    }
+    .first-card{
+        grid-template-columns: 15rem 11rem;       
+    }
+    .card-image {
+        height: 150px;
+    }
+    .card {
+        width: 150px;
+    }
+    .submit {
+        padding: 1rem 3rem;
+    }
+    .quantity {
+        padding: .5rem .125rem;
+    }
+    .little-icons {
+        height: 20px;
+        align-self: center;
+    }
+    .pudding-icon, .the-goods {
+        height: 40px;
+    }
+    .break-point {
+        display: grid;
+        grid-template-columns: 3rem 9rem 2rem 2rem 2rem;
+    }
+    .the-goods-mobile {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .little-icons-mobile {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .other-icons-mobile {
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
 }
